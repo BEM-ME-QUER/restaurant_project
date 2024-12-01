@@ -38,6 +38,87 @@
     
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo Bem-Me-Quer">
+            <span><strong>BEM-ME-QUER</strong><br>Nutrindo e Sabores</span>
+        </div>
+        <nav>
+            <a href="#">Página Inicial</a>
+            <a href="#">Menu</a>
+            <a href="#">Eventos</a>
+            <a href="#">Contactos</a>
+        </nav>
+        <a href="#" class="btn-reserve">Reserve já!</a>
+    </header>
 
+    <div class="container">
+        <h1>RESERVAS</h1>
+        <div class ="reserva-container">
+<!--texto esq-->
+        
+        
+        <div class = "reserva-texto">
+            <p>ALGUM TEXTO AQUI</p>
+
+        <p>RESERVE SUA MESA CONOSCO. </p>
+            
+           <p> ENVIAREMOS UM E-MAIL DE CONFIRMAÇÃO...</p>
+       
+    </div>
+
+<!--form á direita-->
+        <form>
+            <div class="divisoes">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </div>
+            <div class="divisoes">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+            </div>
+            <div class="divisoes">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email">
+            </div>
+
+            <div class="row">
+                <div class="divisoes">  
+                <label for="pessoas">Nº de Pessoas:</label>
+                <select id="pessoas" name="pessoas">
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                </select>
+            </div>
+            <div class="divisoes">
+                <label for="data">Data e Hora:</label>
+                <input type="datetime-local" id="data" name="data">
+            </div>
+        </div>
+            <div class ="divisoes" >
+                <label for="mensagem">Mensagem Adicional:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva uma mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Reserve agora</button>
+        </form>
+    </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <strong>Morada:</strong> R. de Ciriaco Cardoso 186
+        </div>
+        <div>
+            <strong>Horário de atendimento:</strong> Todos os dias - 12h00 às 21h00
+        </div>
+        <div class="socials">
+            <a href="#">&</a>
+            <a href="#">&</a>
+        </div>
+    </footer>
 </body>
+
 </html>
