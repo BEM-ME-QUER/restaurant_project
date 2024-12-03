@@ -38,6 +38,124 @@
     
 </head>
 <body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <div class="navbar-wrapper">
+            <a class="navbar-brand" href="index.html">
+              <img src="/img/logo1.svg" alt="Bem-Me-Quer" class="logo" />
+            </a>
+            <div class="navbar-nav-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/menu/menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/eventos/eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contacto/contacto.html">Contactos</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar-nav-right">
+              <a class="btn rounded" href="/reservas/reservas.html"
+                >Reserve já!</a
+              >
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+    <div class="container">
+        <h1>RESERVAS</h1>
+        <div class ="reserva-container">
+<!--texto esq-->
+        
+        
+        <div class = "reserva-texto">
+            <p>ALGUM TEXTO AQUI</p>
+
+        <p>RESERVE SUA MESA CONOSCO. </p>
+            
+           <p> ENVIAREMOS UM E-MAIL DE CONFIRMAÇÃO...</p>
+       
+    </div>
+
+<!--form á direita-->
+        <form>
+            <div class="divisoes">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome">
+            </div>
+            <div class="divisoes">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+            </div>
+            <div class="divisoes">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Seu email">
+            </div>
+
+            <div class="row">
+                <div class="divisoes">  
+                <label for="pessoas">Nº de Pessoas:</label>
+                <select id="pessoas" name="pessoas">
+                    <option value="1">1 pessoa</option>
+                    <option value="2">2 pessoas</option>
+                    <option value="3">3 pessoas</option>
+                    <option value="4">4 pessoas</option>
+                </select>
+            </div>
+            <div class="divisoes">
+                <label for="data">Data e Hora:</label>
+                <input type="datetime-local" id="data" name="data">
+            </div>
+        </div>
+            <div class ="divisoes" >
+                <label for="mensagem">Mensagem Adicional:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Escreva uma mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Reserve agora</button>
+        </form>
+    </div>
+    </div>
+
+ <!-- Footer -->
+ <hr />
+ <footer>
+   <div id="footerContainer">
+     <div>
+       <img
+         src="/img/logoMarca.svg"
+         alt="Bem-Me-Quer logo"
+         class="logoFooter"
+       />
+     </div>
+     <div>
+       <h6>Morada</h6>
+       <p>Rua de Ciríaco Cardoso 186, 4150-212 Porto</p>
+     </div>
+     <div>
+       <h6>Horário de Funcionamento</h6>
+       <p>Todos os dias - 12h00 - 21h00</p>
+     </div>
+     <div>
+       <h6>Redes Sociais</h6>
+       <div class="socialLinks">
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+       </div>
+     </div>
+   </div>
+ </footer>
 
 </body>
+
 </html>
