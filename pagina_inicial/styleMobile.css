@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+  .hero-container {
+    height: calc(100vh - 500px);
+    width: 100%;
+  }
+  .hero-content {
+    width: 200px;
+    top: 20%;
+    left: 20%;
+  }
+  .hero-content h1,
+  .hero-content p {
+    font-size: 0.7rem;
+  }
+}
