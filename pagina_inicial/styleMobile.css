@@ -1,30 +1,42 @@
-@media screen and (max-width: 768px) {
-  .hero-container {
-    height: calc(100vh - 500px);
-    width: 100%;
-  }
-  .hero-content {
-    width: 200px;
-    top: 20%;
-    left: 20%;
-  }
-  .hero-content h1,
-  .hero-content p {
-    font-size: 0.7rem;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+/* Variáveis das cores */
+:root {
+  --background: #ffffff;
+  --secondaryBackground: #fafafa;
+  --lightOrange: #f99948;
+  --darkOrange: #f7801a;
+  --cardBackground: #fff7e9;
+  --text: #000000;
+  --greenText: #485441;
+  --greyText: #8e8e8e;
+  --primary: #82a93a;
+  --secondary: #4b882a;
 }
 
 @media screen and (max-width: 992px) {
-  .navbar-nav-right{
+
+  .navbar-nav-right {
     justify-content: center;
     margin-top: 50px;
     padding-bottom: 50px;
   }
-  
-  #navbarNav{
+
+  #navbarNav {
     background-color: white;
   }
-  
-}
 
+  .navbar-toggler {
+    border: var(--primary) 2px solid;
+  }
+
+  .navbar-toggler:focus {
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--secondary) !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(353%)
+      hue-rotate(56deg) brightness(95%) contrast(86%);
+  }
+}
