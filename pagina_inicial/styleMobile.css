@@ -12,4 +12,19 @@
   .hero-content p {
     font-size: 0.7rem;
   }
+
 }
+
+@media screen and (max-width: 992px) {
+  .navbar-nav-right{
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  #navbarNav{
+    background-color: white;
+  }
+  
+}
+

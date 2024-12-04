@@ -39,12 +39,17 @@ p {
 body {
   background-color: var(--background);
   font-family: "Nunito", serif;
+  max-width: 1920px;
+  width: 100%;
 }
 
 header {
+  z-index: 3;
   position: fixed;
   top: 0;
+  max-width: 1920px;
   width: 100%;
+  
 }
 /* Propriedades da Navbar */
 
@@ -54,6 +59,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
+
+}
+
+.navbar-collapse .collapse .show{
+  background-color: var(--secondaryBackground);
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -67,7 +78,6 @@ header {
   width: 98%;
   margin: 0 auto;
   padding: 0;
-  height: 60px;
 }
 
 .navbar-brand {
@@ -142,6 +152,7 @@ header {
   padding: 1.5rem;
   width: 100%;
   background-color: var(--secondaryBackground);
+  max-width: 1920px;
 }
 
 footer img {
@@ -172,20 +183,22 @@ hr {
 
 /* Main content */
 main {
-  width: 98%;
-  flex: 1;
+  max-width: 1920px;
+  width: 100%;
 }
 .hero-container {
-  margin: 105px 16px 16px 16px;
+  margin: 110px 0;
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100vw;
-  height: calc(100vh - 8rem);
+  max-width: 1920px;
+  width: 100%;
+  height: calc(100vh - 6rem);
   position: relative;
   border-radius: 25px;
 }
-.hero-container {
+.hero-container img{
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -193,8 +206,8 @@ main {
 }
 .hero-content {
   position: absolute;
-  bottom: 20%;
-  left: 30%;
+  bottom: 30px;
+  left: 27%;
   width: 400px;
   background-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
@@ -205,6 +218,10 @@ main {
   color: #4b882a;
   text-align: center;
   font-weight: bold;
+}
+
+.hero-content h1{
+  font-weight: 700;
 }
 .hero-content p {
   text-align: center;
