@@ -3,15 +3,11 @@
 /* Variáveis das cores */
 :root {
   --background: #ffffff;
-  --secondaryBackground: #fafafa;
   --lightOrange: #f99948;
   --darkOrange: #f7801a;
   --cardBackground: #fff7e9;
-  --text: #000000;
   --greenText: #485441;
-  --greyText: #8e8e8e;
-  --primary: #82a93a;
-  --secondary: #4b882a;
+  --primary: #4b882a;
 }
 
 /* Reset geral */
@@ -187,6 +183,7 @@ main {
 }
 .hero-container {
   margin: 110px 0;
+  margin-bottom: 100px;
   padding: 0 1rem;
   display: flex;
   justify-content: center;
@@ -225,4 +222,28 @@ main {
 .hero-content p {
   text-align: center;
   font-weight: 600;
+}
+
+#infoCards {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+#infoCards .card {
+  display: flex;
+  align-items: center;
+  background-color: var(--cardBackground);
+  width: 25%;
+  height: 10rem;
+  border-radius: 25px;
+ 
+}
+
+#infoCards .card-img-top{
+ 
+  width: 55px;
 }
