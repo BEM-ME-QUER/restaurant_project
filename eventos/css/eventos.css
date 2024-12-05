@@ -114,12 +114,11 @@ body {
 }
 /* MAIN */
 main{
-  margin: 6px;
-  padding: 6px;
+  margin-top: 90px;
 }
-p{
-  text-align: left;
-  
+
+h1{
+  text-align: center;
 }
 
 .image-grid img {
