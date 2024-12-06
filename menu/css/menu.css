@@ -1,7 +1,7 @@
 
-header {
+/* header {
     display: none;
-}
+} */
 
 
 h1 {
@@ -11,9 +11,9 @@ h1 {
     text-transform: uppercase;
 }
 
-
 .page-subtitle-menu {
     text-align: center;
+    margin: 50px;
 }
 
 .page-subtitle-menu span {
@@ -25,27 +25,21 @@ h1 {
 /* Menu principal: 4 passos */
 
 .main-menu {
-    gap: 6rem;
+    gap: 2rem;
 }
 
 /* Carrossel */
 .carousel {
-    width: 300px;
-    height: 450px;
+    width: 288px;
+    height: 420px;
     border-radius: 25px;
     overflow: hidden;
-    position: relative;
 }
 
-.carousel-inner {
-    width: 100%;
+.carousel-inner, .carousel-item  {
     height: 100%;
 }
 
-.carousel-item {
-    width: 100%;
-    height: 100%;
-}
 
 .carousel-item img {
     width: 100%;
@@ -108,6 +102,30 @@ h1 {
     margin-bottom: 10px;
 }
 
+.card-7 ul li {
+    font-size: 12px;
+}
+
+
+.complements-menu {
+    gap: 6rem;
+    margin-top: 50px;
+}
+
+.cards-complements ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards-complements ul {
+    margin-top: 100px;
+}
+
+.complements-list {
+    justify-content: flex-start;
+}
+
+
 .card-footer {
     display: flex;
     justify-content: space-between;
@@ -117,11 +135,23 @@ h1 {
  }
 
 
+.suggestions-cards {
+    gap: 6rem;
+ }
 
+.suggestions-title {
+    margin: 50px;
+}
+.suggestions-cards .card {
+    background-color: var(--cardBackground);
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+}
 
-
-
-
+.suggestions-cards .card-text {
+    text-align: left;   
+}
 
  /* classes gerais */
 

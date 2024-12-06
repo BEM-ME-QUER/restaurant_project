@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <!-- Meta Tags para otimização de SEO -->
-         
+  <head>
+    <!-- Meta Tags para otimização de SEO -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Eduardo,Rafaela,Marina,Nuno" />
@@ -10,287 +10,541 @@
     <meta name="keywords" content="HTML5,CSS3,JS,BOOTSTRAP" />
     <meta name="description" content="Página Inicial" />
     <meta name="aplication-name" content="Restaurant Website" />
-                    
-        <!-- Link FontAwesome -->
+
+    <!-- Link FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
       integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />                        
-                    
-        <!-- Link BootStrap (CSS & JS) -->
-                     
+    />
+
+    <!-- Link BootStrap (CSS & JS) -->
+
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"/>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
     <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous" ></script>
-            
-        <!--Título da Página -->
-            
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Título da Página -->
+
     <title>Menu</title>
-            
-        <!-- Links do CSS -->
 
-    <link rel="stylesheet" href="/menu/css/menu.css">
-    <link rel="stylesheet" href="/menu/css/menuMobile.css">
-    <link rel="stylesheet" href="/pagina_inicial/style.css">
+    <!-- Links do CSS -->
 
-</head>
-<body>
+    <link rel="stylesheet" href="/menu/css/menu.css" />
+    <link rel="stylesheet" href="/menu/css/menuMobile.css" />
+    <link rel="stylesheet" href="/pagina_inicial/style.css" />
+  </head>
+  <body>
+
+    
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/img/logo1.svg" alt="Imagem comida" class="logo" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"
-                    >Página Inicial</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/eventos/eventos.html">Eventos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contactos</a>
-                </li>
-              </ul>
-              <div class="navbar-nav-right">
-                <a class="btn rounded" href="/reservas/reservas.html"
-                  >Reserve já!</a
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/img/logo1.svg" alt="Imagem comida" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Página Inicial</a
                 >
-              </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/eventos/eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactos</a>
+              </li>
+            </ul>
+            <div class="navbar-nav-right">
+              <a class="btn rounded" href="/reservas/reservas.html"
+                >Reserve já!</a
+              >
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <h1>Nosso menu</h1>
+      <h1>Nosso menu</h1>
 
-        <p class="page-subtitle-menu">Crie o seu menu a partir de <span class="menu-price">€ 7.00</span></p>
-    
-        
-        <div class="main-menu flex-wrap-center">
+      <p class="page-subtitle-menu">
+        Crie o seu menu a partir de <span class="menu-price">€ 7.00</span>
+      </p>
+      
 
-            <div class="menu-card card-1">
-                <div class="card-title">
-                  <span class="card-step">1</span>
-                  <span class="step-description">Escolha sua base</span>
-                </div>
-        
-                <div id="carousel-1" class="carousel slide">
-                  <div class="carousel-inner">
+      <div class="main-menu flex-wrap-center">
+        <div class="menu-card card-1">
+          <div class="card-title">
+            <span class="card-step">1</span>
+            <span class="step-description">Escolha sua base</span>
+          </div>
 
-                    <div class="carousel-item active">
-                      <img src="../img/menubase.jpg" class="d-block " alt="Massas, arroz, e outros hidratos">
-                    </div>
+          <div id="carousel-1" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menubase.jpg"
+                  class="d-block"
+                  alt="Massas, arroz, e outros hidratos"
+                />
+              </div>
 
-                    <div class="carousel-item">
+              <div class="carousel-item">
+                <div class="card-list-of-options">
+                  <h3>Nossas opções</h3>
 
-                      <div class="card-list-of-options">
-                        <h3>Nossas opções</h3>
+                  <ul>
+                    <li>Massas</li>
+                    <li>Arroz branco</li>
+                    <li>Arroz Integral</li>
+                    <li>Quinoa</li>
+                  </ul>
 
-                        <ul>
-                          <li>Massas</li>
-                          <li>Arroz branco </li>
-                          <li>Arroz Integral</li>
-                          <li>Quinoa</li>
-                        </ul>
-
-                        <div class="card-footer">
-                          <span>Bases adicionais</span>
-                          <span class="price">+ € 2.00</span>
-                        </div>
-                      </div> 
-
-                    </div>
-
+                  <div class="card-footer">
+                    <span>Bases adicionais</span>
+                    <span class="price">+ € 2.00</span>
                   </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-1" data-bs-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-left arrow-icon"></i></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-1" data-bs-slide="next">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-right arrow-icon"></i></span>
-                  </button>
-
                 </div>
-
+              </div>
             </div>
 
-            <div class="menu-card card-2">
-                <div class="card-title">
-                  <span class="card-step">2</span>
-                  <span class="step-description">Escolha sua proteína</span>
-                </div>
-        
-                <div id="carousel-2" class="carousel slide">
-                  <div class="carousel-inner">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-1"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
 
-                    <div class="carousel-item active">
-                      <img src="../img/menuptn2.jpg" class="d-block " alt="Prato pronto com frango">
-                    </div>
+        <div class="menu-card card-2">
+          <div class="card-title">
+            <span class="card-step">2</span>
+            <span class="step-description">Escolha sua proteína</span>
+          </div>
 
-                    <div class="carousel-item">
+          <div id="carousel-2" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menuptn2.jpg"
+                  class="d-block"
+                  alt="Prato pronto com frango"
+                />
+              </div>
 
-                      <div class="card-list-of-options">
-                        <h3>Nossas opções</h3>
+              <div class="carousel-item">
+                <div class="card-list-of-options">
+                  <h3>Nossas opções</h3>
 
-                        <ul>
-                            <li>Atum</li>
-                            <li>Tofu</li>
-                            <li>Soja</li>
-                            <li>Vaca</li>
-                            <li>Frango</li>
-                            <li>Salmão</li>
-                            <li>Camarão</li>
-                        </ul>
+                  <ul>
+                    <li>Atum</li>
+                    <li>Tofu</li>
+                    <li>Soja</li>
+                    <li>Vaca</li>
+                    <li>Frango</li>
+                    <li>Salmão</li>
+                    <li>Camarão</li>
+                  </ul>
 
-                        <div class="card-footer">
-                          <span>Proteínas adicionais</span>
-                          <span class="price">+ € 2.00</span>
-                        </div>
-                      </div> 
-
-                    </div>
-
+                  <div class="card-footer">
+                    <span>Proteínas adicionais</span>
+                    <span class="price">+ € 2.00</span>
                   </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-2" data-bs-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-left arrow-icon"></i></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-2" data-bs-slide="next">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-right arrow-icon"></i></span>
-                  </button>
-
                 </div>
-
+              </div>
             </div>
 
-            <div class="menu-card card-3">
-                <div class="card-title">
-                  <span class="card-step">3</span>
-                  <span class="step-description">Escolha seus complementos</span>
-                </div>
-        
-                <div id="carousel-3" class="carousel slide">
-                  <div class="carousel-inner">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
 
-                    <div class="carousel-item active">
-                      <img src="../img/menuacompanhamento.jpg" class="d-block " alt="legumes">
-                    </div>
+        <div class="menu-card card-3">
+          <div class="card-title">
+            <span class="card-step">3</span>
+            <span class="step-description">Escolha seus complementos</span>
+          </div>
 
-                    <div class="carousel-item">
+          <div id="carousel-3" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menuacompanhamento.jpg"
+                  class="d-block"
+                  alt="legumes"
+                />
+              </div>
 
-                      <div class="card-list-of-options">
-                        <h3>Nossas opções</h3>
+              <div class="carousel-item">
+                <div class="card-list-of-options">
+                  <h3>Nossas opções</h3>
 
-                        <ul>
-                            <li>Pepino</li>
-                            <li>Tomate</li>
-                            <li>Cenoura </li>
-                            <li>Brócolos</li>
-                            <li>Cogumelo</li>
-                            <li>Beterraba</li>
-                            <li>Ovo cozido</li>
-                            <li>Grão de bico</li>
-                        </ul>
-                        
-                        <div class="card-footer">
-                          <span>Complementos adicionais</span>
-                          <span class="price">+ € 2.00</span>
-                        </div>
-                      </div> 
+                  <ul>
+                    <li>Pepino</li>
+                    <li>Tomate</li>
+                    <li>Cenoura</li>
+                    <li>Brócolos</li>
+                    <li>Cogumelo</li>
+                    <li>Beterraba</li>
+                    <li>Ovo cozido</li>
+                    <li>Grão de bico</li>
+                  </ul>
 
-                    </div>
-
+                  <div class="card-footer">
+                    <span>Complementos adicionais</span>
+                    <span class="price">+ € 2.00</span>
                   </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-3" data-bs-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-left arrow-icon"></i></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-3" data-bs-slide="next">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-right arrow-icon"></i></span>
-                  </button>
-
                 </div>
-
+              </div>
             </div>
 
-            <div class="menu-card card-4">
-                <div class="card-title">
-                  <span class="card-step">4</span>
-                  <span class="step-description">Escolha seu molho</span>
-                </div>
-        
-                <div id="carousel-4" class="carousel slide">
-                  <div class="carousel-inner">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
 
-                    <div class="carousel-item active">
-                      <img src="../img/menumolhos.jpg" class="d-block " alt="molhos">
-                    </div>
+        <div class="menu-card card-4">
+          <div class="card-title">
+            <span class="card-step">4</span>
+            <span class="step-description">Escolha seu molho</span>
+          </div>
 
-                    <div class="carousel-item">
+          <div id="carousel-4" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/menumolhos.jpg" class="d-block" alt="molhos" />
+              </div>
 
-                      <div class="card-list-of-options">
-                        <h3>Nossas opções</h3>
+              <div class="carousel-item">
+                <div class="card-list-of-options">
+                  <h3>Nossas opções</h3>
 
-                        <ul>
-                            <li>Iogurte</li>
-                            <li>Picante</li>
-                            <li>Agridoce</li>
-                            <li>Soja light </li>
-                        </ul>
+                  <ul>
+                    <li>Iogurte</li>
+                    <li>Picante</li>
+                    <li>Agridoce</li>
+                    <li>Soja light</li>
+                  </ul>
 
-                        <div class="card-footer">
-                          <span>Molhos adicionais</span>
-                          <span class="price">+ € 2.00</span>
-                        </div>
-                      </div> 
-
-                    </div>
-
+                  <div class="card-footer">
+                    <span>Molhos adicionais</span>
+                    <span class="price">+ € 2.00</span>
                   </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-4" data-bs-slide="prev">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-left arrow-icon"></i></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carousel-4" data-bs-slide="next">
-                    <span class="" aria-hidden="true"><i class="fa-solid fa-chevron-right arrow-icon"></i></span>
-                  </button>
-
                 </div>
-
+              </div>
             </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-4"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-4"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MENU BEBIDAS, SNACKS E SOBREMESAS -->
+      <div class="complements-menu flex-wrap-center">
+        <!-- bebidas -->
+        <div class="menu cards-complements card-5">
+          <div class="card-title">
+            <span class="step-description">Bebidas</span>
+          </div>
+          <div id="carousel-5" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menubebidas.jpg"
+                  class="d-block"
+                  alt="Smoothies"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <div class="card-list-of-options complements-list">
+                  <h3>Nossas opções</h3>
+
+                  <ul>
+                    <li>Água <span class="price">€ 1.50</span></li>
+                    <li>Iced tea <span class="price">€ 3.00</span></li>
+                    <li>Sumos naturais <span class="price">€ 3.00</span></li>
+                    <li>Smoothie Banana <span class="price">€ 3.00</span></li>
+                    <li>Smoothie Morango <span class="price">€ 3.00</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-5"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-5"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sobremesas -->
+        <div class="menu cards-complements card-6">
+          <div class="card-title">
+            <span class="step-description">Sobremesas</span>
+          </div>
+          <div id="carousel-6" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menusobremesa1.png"
+                  class="d-block"
+                  alt="Sala de frutas"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <div class="card-list-of-options complements-list">
+                  <h3>Nossas opções</h3>
+
+                  <ul>
+                    <li>Bowl de Açaí<span class="price">€ 3.00</span></li>
+                    <li>Pudim de Chia <span class="price">€ 3.00</span></li>
+                    <li>Gelado de manga <span class="price">€ 3.00</span></li>
+                    <li>Salada de Frutas<span class="price">€ 3.00</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-6"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-6"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <!-- Snacks -->
+        <div class="menu cards-complements card-7">
+          <div class="card-title">
+            <span class="step-description">Snacks</span>
+          </div>
+          <div id="carousel-7" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../img/menusnacks2.jpg"
+                  class="d-block"
+                  alt="Sala de frutas"
+                />
+              </div>
+
+              <div class="carousel-item">
+                <div class="card-list-of-options complements-list">
+                  <h3>Nossas opções</h3>
+
+                  <ul>
+                    <li>Mix de Oleaginosas<span class="price">€ 3.00</span></li>
+                    <li>
+                      Chips de batata doce <span class="price">€ 3.00</span>
+                    </li>
+                    <li>
+                      Chips de Maçã com Canela <span class="price">€ 3.00</span>
+                    </li>
+                    <li>
+                      Croutons de Grão-de-Bico<span class="price">€ 3.00</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carousel-7"
+              data-bs-slide="prev"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-left arrow-icon"></i
+              ></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carousel-7"
+              data-bs-slide="next"
+            >
+              <span class="" aria-hidden="true"
+                ><i class="fa-solid fa-chevron-right arrow-icon"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nossas sugestões -->
+      <div class="our-suggestions">
+        <h1 class="suggestions-title">Nossas sugestões</h1>
+
+        <div class="suggestions-cards flex-wrap-center">
+
+          <div class="card" style="width: 18rem">
+            <img src="../img/sug-salmao.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Massa + Salmão</h5>
+              <p class="card-text">
+                Acompanhado de brócolos e grão-de-bico.
+              </p>
+              <span class="price">€ 7.00</span>
+            </div>
+          </div>
+
+          
+          <div class="card" style="width: 18rem">
+            <img src="../img/sug-quinoa.png" class="card-img-top" alt="prato de quinoa com complementos" />
+            <div class="card-body">
+              <h5 class="card-title">Quinoa + Cogumelos</h5>
+              <p class="card-text">
+                Acompanhado de pepinos, grão-de-bico, alface e tomate.
+              </p>
+              <span class="price">€ 7.50</span>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem">
+            <img src="../img/sug-camarao.png" class="card-img-top" alt="prato arroz e camarão com complementos" />
+            <div class="card-body">
+              <h5 class="card-title">Arroz Branco + Camarão</h5>
+              <p class="card-text">
+                Acompanhado de alface, beterraba e cenoura.
+              </p>
+              <span class="price">€ 7.50</span>
+            </div>
+          </div>
+
+
 
         </div>
-    
-    
+      </div>
     </main>
-
-</body>
+  </body>
 </html>
