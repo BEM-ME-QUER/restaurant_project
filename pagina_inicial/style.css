@@ -39,6 +39,13 @@ body {
   width: 100%;
 }
 
+body h1 {
+  font-weight: 700;
+  color: #4b882a;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
 header {
   z-index: 3;
   position: fixed;
@@ -98,7 +105,7 @@ header {
 
 .navbar-nav .nav-link {
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
@@ -124,6 +131,7 @@ header {
 .navbar-nav-right .btn {
   background-color: #f99948;
   color: #fff;
+  font-weight: 700;
   border-radius: 5px;
   padding: 0.4rem 1.5rem;
   transition: background-color 0.3s ease;
@@ -183,7 +191,6 @@ main {
 }
 .hero-container {
   margin: 110px 0;
-  margin-bottom: 100px;
   padding: 0 1rem;
   display: flex;
   justify-content: center;
@@ -211,12 +218,13 @@ main {
   border-radius: 15px;
 }
 .hero-content {
-  color: #4b882a;
+  color: var(--greenText);
   text-align: center;
   font-weight: bold;
 }
 
 .hero-content h1 {
+  margin: 16px;
   font-weight: 700;
 }
 .hero-content p {
@@ -231,19 +239,123 @@ main {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
+  margin-bottom: 110px;
 }
 
 #infoCards .card {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   background-color: var(--cardBackground);
-  width: 25%;
-  height: 10rem;
+  width: 32%;
+  height: 13rem;
   border-radius: 25px;
- 
+  max-width: 32%;
+  border: none;
 }
 
-#infoCards .card-img-top{
- 
+.card p {
+  margin-top: 20px;
+  color: var(--greenText);
+  font-weight: 600;
+}
+.carImg {
   width: 55px;
+}
+
+#menuSection {
+  width: 100%;
+  max-width: 1920px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  gap: 85px;
+  margin-bottom: 100px;
+}
+#menuImg {
+  max-width: 50%;
+}
+#menuImg img {
+  width: 850px;
+  height: 100%;
+}
+
+#menuText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 50%;
+  height: 657px;
+  font-size: 24px;
+  color: var(--greenText);
+}
+.menuBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 39px !important;
+  width: 340px;
+  flex: 0;
+  margin: 0 auto;
+}
+
+#menuText p {
+  margin-bottom: 15px;
+}
+.menuBtn .btn {
+  width: 80%;
+  height: auto;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+#menuText h2 {
+  color: var(--darkOrange);
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+#avaliacoes {
+  display: flex;
+  gap: 2%;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 100px;
+}
+
+#cardEvaluation {
+  max-width: 32%;
+  width: 100%;
+  height: 400px;
+  background-color: var(--cardBackground);
+  border-radius: 25px;
+}
+
+#stars {
+  display: flex;
+  color: var(--darkOrange);
+  font-size: 24px;
+  margin-left: 10%;
+  padding-top: 50px;
+}
+
+#cardEvaluation p {
+  margin: 30px auto;
+  max-width: 80%;
+  height: auto;
+  color: var(--greenText);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.person {
+  margin: 0 auto;
+  padding-top: 40px;
+  color: var(--primary) !important;
 }
