@@ -129,7 +129,7 @@ header {
 }
 
 .navbar-nav-right .btn {
-  background-color: #f99948;
+  background-color: var(--darkOrange);
   color: #fff;
   font-weight: 700;
   border-radius: 5px;
@@ -138,7 +138,7 @@ header {
 }
 
 .navbar-nav-right .btn:hover {
-  background-color: #f7801a;
+  background-color: var(--lightOrange);
 }
 
 .navbar-nav-right .btn:focus {
@@ -152,10 +152,29 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 4rem 2rem;
   width: 100%;
-  background-color: var(--secondaryBackground);
+  background-color: #4b882a;
   max-width: 1920px;
+  color: white;
+}
+
+#secondDiv p {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+#footerLinks ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: 700;
+}
+
+#footerLinks a:hover {
+  color: var(--darkOrange);
+  transition: 0.3s ease;
 }
 
 footer img {
@@ -165,19 +184,29 @@ footer img {
 
 .socialLinks {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 150px;
+}
+
+.socialLinks img {
+  width: 40px;
+  transition: 0.3s ease;
+}
+.socialLinks a img:hover {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(41%) saturate(2626%)
+    hue-rotate(349deg) brightness(98%) contrast(97%);
 }
 
 .socialLinks a i {
-  font-size: 20px;
-  color: var(--secondary);
-  transition: color 0.3s ease;
+  font-size: 30px;
+  color: var(--background);
 }
 
 .socialLinks a:hover i {
-  color: var(--primary);
+  transition: 0.3s ease;
+  color: var(--darkOrange);
 }
 hr {
   border: 1px solid var(--primary);
@@ -231,7 +260,7 @@ main {
   text-align: center;
   font-weight: 600;
 }
-
+/* Second Section */
 #infoCards {
   display: flex;
   width: 100%;
@@ -264,7 +293,7 @@ main {
 .carImg {
   width: 55px;
 }
-
+/* Third Section */
 #menuSection {
   width: 100%;
   max-width: 1920px;
@@ -319,7 +348,7 @@ main {
   font-size: 40px;
   text-align: center;
 }
-
+/* Fourth Section */
 #avaliacoes {
   display: flex;
   gap: 2%;
