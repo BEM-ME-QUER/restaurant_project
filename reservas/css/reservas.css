@@ -240,15 +240,29 @@ form {
 .row {
   display: flex;
 }
-.row input[type="datetime-local"]:valid {
-  color: #000;
-}
 
 .row .num-pessoas,
 .row .data-hora {
   width: 50%;
 }
 
+select:not(.selected) {
+  color: rgb(189, 189, 189);
+}
+
+select.selected {
+  color: black;
+}
+
+select:not(.selected),
+input[type="datetime-local"]:not(.selected) {
+  color: rgb(189, 189, 189); 
+}
+
+select.selected,
+input[type="datetime-local"].selected {
+  color: black;
+}
 form label {
   margin-bottom: 5px;
   color: rgb(189, 189, 189);
