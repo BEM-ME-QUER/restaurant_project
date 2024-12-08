@@ -8,7 +8,7 @@
     <meta name="author" content="Eduardo,Rafaela,Marina,Nuno" />
     <meta name="generator" content="VSCode" />
     <meta name="keywords" content="HTML5,CSS3,JS,BOOTSTRAP" />
-    <meta name="description" content="Página Inicial" />
+    <meta name="description" content="Menu" />
     <meta name="aplication-name" content="Restaurant Website" />
 
     <!-- Link FontAwesome -->
@@ -19,7 +19,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
     <!-- Link BootStrap (CSS & JS) -->
 
     <link
@@ -37,6 +36,9 @@
     <!--Título da Página -->
 
     <title>Menu</title>
+    <!-- Links do favicon -->
+
+    <link rel="icon" type="image/png" href="/img/logo.svg" />
 
     <!-- Links do CSS -->
 
@@ -45,63 +47,56 @@
     <link rel="stylesheet" href="/pagina_inicial/style.css" />
   </head>
   <body>
-
-    
     <header>
-      <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/img/logo1.svg" alt="Imagem comida" class="logo" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    aria-current="page"
-                    href="/index.html"
-                    >Página Inicial</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="/menu/menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/eventos/eventos.html">Eventos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/contacto/contacto.html">Contactos</a>
-                </li>
-              </ul>
-              <div class="navbar-nav-right">
-                <a class="btn rounded" href="/reservas/reservas.html"
-                  >Reserve já!</a
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/index.html">
+            <img src="/img/logo1.svg" alt="Imagem comida" class="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/index.html"
+                  >Página Inicial</a
                 >
-              </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/menu/menu.html">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/eventos/eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacto/contacto.html">Contactos</a>
+              </li>
+            </ul>
+            <div class="navbar-nav-right">
+              <a class="btn rounded" href="/reservas/reservas.html"
+                >Reserve já!</a
+              >
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </nav>
+    </header>
 
     <main>
-      <h1>Nosso menu</h1>
+      <h1 style="margin-top: 105px !important">Menu</h1>
 
       <p class="page-subtitle-menu">
-        Crie o seu menu a partir de <span class="menu-price">€ 7.00</span>
+        Crie o seu menu desde <span class="menu-price"> 7.00€</span>
       </p>
-      
 
       <div class="main-menu flex-wrap-center">
         <div class="menu-card card-1">
@@ -122,7 +117,7 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
                     <li>Massas</li>
@@ -132,8 +127,8 @@
                   </ul>
 
                   <div class="card-footer">
-                    <span>Bases adicionais</span>
-                    <span class="price">+ € 2.00</span>
+                    <span>Bases extra</span>
+                    <span class="price">+ 2.00€</span>
                   </div>
                 </div>
               </div>
@@ -180,7 +175,7 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
                     <li>Atum</li>
@@ -193,8 +188,8 @@
                   </ul>
 
                   <div class="card-footer">
-                    <span>Proteínas adicionais</span>
-                    <span class="price">+ € 2.00</span>
+                    <span>Proteínas extra</span>
+                    <span class="price">+ 2.00€</span>
                   </div>
                 </div>
               </div>
@@ -241,7 +236,7 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
                     <li>Pepino</li>
@@ -255,8 +250,8 @@
                   </ul>
 
                   <div class="card-footer">
-                    <span>Complementos adicionais</span>
-                    <span class="price">+ € 2.00</span>
+                    <span>Complementos extra</span>
+                    <span class="price">+ 2.00€</span>
                   </div>
                 </div>
               </div>
@@ -299,7 +294,7 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
                     <li>Iogurte</li>
@@ -309,8 +304,8 @@
                   </ul>
 
                   <div class="card-footer">
-                    <span>Molhos adicionais</span>
-                    <span class="price">+ € 2.00</span>
+                    <span>Molhos extra</span>
+                    <span class="price">+ 2.00€</span>
                   </div>
                 </div>
               </div>
@@ -359,14 +354,14 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options complements-list">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
-                    <li>Água <span class="price">€ 1.50</span></li>
-                    <li>Iced tea <span class="price">€ 3.00</span></li>
-                    <li>Sumos naturais <span class="price">€ 3.00</span></li>
-                    <li>Smoothie Banana <span class="price">€ 3.00</span></li>
-                    <li>Smoothie Morango <span class="price">€ 3.00</span></li>
+                    <li>Água <span class="price">1.50€</span></li>
+                    <li>Iced tea <span class="price">3.00€</span></li>
+                    <li>Sumos naturais <span class="price">3.00€</span></li>
+                    <li>Smoothie Banana <span class="price">3.00€</span></li>
+                    <li>Smoothie Morango <span class="price">3.00€</span></li>
                   </ul>
                 </div>
               </div>
@@ -412,13 +407,13 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options complements-list">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
-                    <li>Bowl de Açaí<span class="price">€ 3.00</span></li>
-                    <li>Pudim de Chia <span class="price">€ 3.00</span></li>
-                    <li>Gelado de manga <span class="price">€ 3.00</span></li>
-                    <li>Salada de Frutas<span class="price">€ 3.00</span></li>
+                    <li>Bowl de Açaí<span class="price">3.00€</span></li>
+                    <li>Pudim de Chia <span class="price">3.00€</span></li>
+                    <li>Gelado de manga <span class="price">3.00€</span></li>
+                    <li>Salada de Frutas<span class="price">3.00€</span></li>
                   </ul>
                 </div>
               </div>
@@ -463,18 +458,18 @@
 
               <div class="carousel-item">
                 <div class="card-list-of-options complements-list">
-                  <h3>Nossas opções</h3>
+                  <h3>Opções</h3>
 
                   <ul>
-                    <li>Mix de Oleaginosas<span class="price">€ 3.00</span></li>
+                    <li>Mix de Oleaginosas<span class="price">3.00€</span></li>
                     <li>
-                      Chips de batata doce <span class="price">€ 3.00</span>
+                      Chips de batata doce <span class="price">3.00€</span>
                     </li>
                     <li>
-                      Chips de Maçã com Canela <span class="price">€ 3.00</span>
+                      Chips de Maçã com Canela <span class="price">3.00€</span>
                     </li>
                     <li>
-                      Croutons de Grão-de-Bico<span class="price">€ 3.00</span>
+                      Croutons de Grão-de-Bico<span class="price">3.00€</span>
                     </li>
                   </ul>
                 </div>
@@ -507,48 +502,87 @@
 
       <!-- Nossas sugestões -->
       <div class="our-suggestions">
-        <h1 class="suggestions-title">Nossas sugestões</h1>
+        <h1 class="suggestions-title">Sugestões</h1>
 
         <div class="suggestions-cards flex-wrap-center">
-
           <div class="card" style="width: 18rem">
             <img src="../img/sug-salmao.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">Massa + Salmão</h5>
-              <p class="card-text">
-                Acompanhado de brócolos e grão-de-bico.
-              </p>
-              <span class="price">€ 7.00</span>
+              <p class="card-text">Acompanhado de brócolos e grão-de-bico.</p>
+              <span class="price">7.00€</span>
             </div>
           </div>
 
-          
           <div class="card" style="width: 18rem">
-            <img src="../img/sug-quinoa.png" class="card-img-top" alt="prato de quinoa com complementos" />
+            <img
+              src="../img/sug-quinoa.png"
+              class="card-img-top"
+              alt="prato de quinoa com complementos"
+            />
             <div class="card-body">
               <h5 class="card-title">Quinoa + Cogumelos</h5>
               <p class="card-text">
                 Acompanhado de pepinos, grão-de-bico, alface e tomate.
               </p>
-              <span class="price">€ 7.50</span>
+              <span class="price">7.50€</span>
             </div>
           </div>
 
           <div class="card" style="width: 18rem">
-            <img src="../img/sug-camarao.png" class="card-img-top" alt="prato arroz e camarão com complementos" />
+            <img
+              src="../img/sug-camarao.png"
+              class="card-img-top"
+              alt="prato arroz e camarão com complementos"
+            />
             <div class="card-body">
               <h5 class="card-title">Arroz Branco + Camarão</h5>
               <p class="card-text">
                 Acompanhado de alface, beterraba e cenoura.
               </p>
-              <span class="price">€ 7.50</span>
+              <span class="price">7.50€</span>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </main>
+
+    <!-- Footer -->
+    <hr />
+    <footer>
+      <div id="footerContainer">
+        <div>
+          <img
+            src="/img/logobranca.svg"
+            alt="Bem-Me-Quer logo"
+            class="logoFooter"
+          />
+        </div>
+        <div id="footerLinks">
+          <ul>
+            <li><a href="/index.html">Página Inicial</a></li>
+            <li><a href="/menu/menu.html">Menu</a></li>
+            <li><a href="/eventos/eventos.html">Eventos</a></li>
+            <li><a href="/contacto/contacto.html">Contactos</a></li>
+          </ul>
+        </div>
+        <div id="secondDiv">
+          <p>R. de Círiaco Cardoso 186, 4350-212, Porto</p>
+          <p>Todos os dias - 12h00 - 19h00</p>
+          <p>+351 123 456 789</p>
+          <p>geral@bemmequer.pt</p>
+        </div>
+        <div class="socialLinks">
+          <div style="display: flex; gap: 20px">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <div style="display: flex; gap: 20px">
+            <a href="#"><img src="/img/togoodtogo.svg" alt="" /></a>
+            <a href="#"><img src="/img/ubereats.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
