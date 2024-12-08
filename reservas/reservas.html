@@ -88,7 +88,7 @@
     </header>
 
     <div class="container-reservation">
-      <h1 style="margin-top: 80px!important">RESERVAS</h1>
+      <h1 style="margin-top: 80px !important">RESERVAS</h1>
 
       <div class="container">
         <!--texto esq-->
@@ -181,5 +181,26 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const select = document.getElementById("pessoas");
+      const dateInput = document.getElementById("data");
+
+      select.addEventListener("change", function () {
+        if (this.value) {
+          this.classList.add("selected");
+        } else {
+          this.classList.remove("selected");
+        }
+      });
+
+      dateInput.addEventListener("change", function () {
+        if (this.value) {
+          this.classList.add("selected");
+        } else {
+          this.classList.remove("selected");
+        }
+      });
+    </script>
   </body>
 </html>
