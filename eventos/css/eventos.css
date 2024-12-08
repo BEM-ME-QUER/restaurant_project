@@ -1,15 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 /* Variáveis das cores */
 :root {
   --background: #ffffff;
-  --secondaryBackground: #fafafa;
   --lightOrange: #f99948;
   --darkOrange: #f7801a;
   --cardBackground: #fff7e9;
-  --text: #000000;
   --greenText: #485441;
-  --greyText: #8e8e8e;
-  --primary: #82a93a;
-  --secondary: #4b882a;
+  --primary: #4b882a;
 }
 
 /* Reset geral */
@@ -20,19 +18,51 @@
   box-sizing: border-box;
 }
 
-/* Background do body */
-body {
-  background-color: var(--background);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
 }
 
+/*  body */
+body {
+  background-color: var(--background);
+  font-family: "Nunito", serif;
+  max-width: 1920px;
+  width: 100%;
+}
+
+body h1 {
+  font-weight: 700;
+  color: #4b882a;
+  text-align: center;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+}
+
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  max-width: 1920px;
+  width: 100%;
+}
 /* Propriedades da Navbar */
 
 .navbar {
-  background-color: var(--secondaryBackground);
+  background-color: #fafafa !important;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 
 .navbar-expand-lg .navbar-nav {
@@ -43,10 +73,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 99%;
-  margin: 0;
+  width: 98%;
+  margin: 0 auto;
   padding: 0;
-  height: 80px;
 }
 
 .navbar-brand {
@@ -54,7 +83,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 5px;
 }
 
 .logo {
@@ -78,7 +106,7 @@ body {
 
 .navbar-nav .nav-link {
   color: #000;
-  font-weight: 500;
+  font-weight: 700;
   padding: 0.5rem 0;
   position: relative;
   transition: color 0.3s ease;
@@ -102,38 +130,21 @@ body {
 }
 
 .navbar-nav-right .btn {
-  background-color: #f99948;
+  background-color: var(--darkOrange);
   color: #fff;
+  font-weight: 700;
   border-radius: 5px;
   padding: 0.4rem 1.5rem;
   transition: background-color 0.3s ease;
 }
 
 .navbar-nav-right .btn:hover {
-  background-color: #f7801a;
-}
-/* MAIN */
-main{
-  margin-top: 90px;
+  background-color: var(--lightOrange);
 }
 
-h1{
-  text-align: center;
-}
-
-.image-grid img {
-  object-fit: cover;
-  
-}
-.large-vertical {
-  width: 100%;
-  height: 607px; 
-  border-radius: 25px;
-}
-.small-horizontal {
-  width: 100%;
-  height: 300px;
-  border-radius: 25px;
+.navbar-nav-right .btn:focus {
+  color: var(--background);
+  border: var(--darkOrange);
 }
 
 /* Footer */
@@ -142,9 +153,29 @@ h1{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 4rem 2rem;
   width: 100%;
-  background-color: var(--secondaryBackground);
+  background-color: #4b882a;
+  max-width: 1920px;
+  color: white;
+}
+
+#secondDiv p {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+#footerLinks ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  font-weight: 700;
+}
+
+#footerLinks a:hover {
+  color: var(--darkOrange);
+  transition: 0.3s ease;
 }
 
 footer img {
@@ -154,23 +185,54 @@ footer img {
 
 .socialLinks {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 150px;
+}
+
+.socialLinks img {
+  width: 40px;
+  transition: 0.3s ease;
+}
+.socialLinks a img:hover {
+  filter: brightness(0) saturate(100%) invert(58%) sepia(41%) saturate(2626%)
+    hue-rotate(349deg) brightness(98%) contrast(97%);
 }
 
 .socialLinks a i {
-  font-size: 20px;
-  color: var(--secondary);
-  transition: color 0.3s ease;
+  font-size: 30px;
+  color: var(--background);
 }
 
 .socialLinks a:hover i {
-  color: var(--primary);
+  transition: 0.3s ease;
+  color: var(--darkOrange);
 }
 hr {
   border: 1px solid var(--primary);
   margin: 0;
 }
 
-/* */
+/* MAIN */
+main {
+  margin-top: 90px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.image-grid img {
+  object-fit: cover;
+}
+.large-vertical {
+  width: 100%;
+  height: 607px;
+  border-radius: 25px;
+}
+.small-horizontal {
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+}
