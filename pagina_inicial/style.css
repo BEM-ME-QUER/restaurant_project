@@ -189,10 +189,12 @@ footer img {
   justify-content: center;
   align-items: center;
   width: 150px;
+  gap: 15px;
 }
 
 .socialLinks img {
   width: 40px;
+  height: 40px;
   transition: 0.3s ease;
 }
 .socialLinks a img:hover {

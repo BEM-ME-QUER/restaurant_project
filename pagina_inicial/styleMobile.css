@@ -3,23 +3,30 @@
 /* Variáveis das cores */
 :root {
   --background: #ffffff;
-  --secondaryBackground: #fafafa;
   --lightOrange: #f99948;
   --darkOrange: #f7801a;
   --cardBackground: #fff7e9;
-  --text: #000000;
   --greenText: #485441;
-  --greyText: #8e8e8e;
-  --primary: #82a93a;
-  --secondary: #4b882a;
+  --primary: #4b882a;
 }
 
-@media screen and (max-width: 992px) {
-
+@media screen and (max-width: 748px) {
   .navbar-nav-right {
     justify-content: center;
     margin-top: 50px;
     padding-bottom: 50px;
+  }
+
+  #menuHamburguer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 71px;
+    padding: 0 16px;
+    align-items: center;
+  }
+  .container-fluid {
+    padding: 0;
   }
 
   #navbarNav {
@@ -27,6 +34,7 @@
   }
 
   .navbar-toggler {
+    height: 50px;
     border: var(--primary) 2px solid;
   }
 
@@ -38,5 +46,109 @@
   .navbar-toggler-icon {
     filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(353%)
       hue-rotate(56deg) brightness(95%) contrast(86%);
+  }
+  #footerContainer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem 1rem;
+    align-items: flex-start;
+  }
+  footer img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+  }
+  #footerLogo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .socialLinks {
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+  }
+  /* Termina Comum*/
+
+  .hero-container {
+    height: calc(100vh - 100px);
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 0;
+  }
+  .hero-container img {
+    height: 300px;
+  }
+
+  .hero-content {
+    left: 16px;
+    top: 300px;
+    max-width: 358px;
+    padding: 0;
+    background-color: var(--cardBackground);
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  .hero-content p {
+    letter-spacing: 1px;
+    text-align: justify;
+    padding: 0 16px;
+  }
+
+  #infoCards {
+    flex-direction: column;
+  }
+
+  .card {
+    min-width: 358px !important;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #menuSection {
+    height: auto;
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #menuImg {
+    max-width: 358px;
+    height: 300px;
+  }
+
+  #menuImg img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #menuText {
+    max-width: 100%;
+    width: 100%;
+    padding: 20px 16px;
+    height: auto;
+    letter-spacing: 0.7px;
+  }
+  #menuText h2 {
+    margin-bottom: 15px;
+  }
+
+  #avaliacoes {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  #cardEvaluation {
+    max-width: 100%;
+    height: 450px;
+    justify-content: space-between;
+  }
+
+  .person {
+    padding-top: 80px;
   }
 }

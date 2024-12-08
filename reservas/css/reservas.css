@@ -138,7 +138,7 @@ header {
   align-items: center;
   padding: 1.5rem;
   width: 100%;
-  background-color: var(--secondaryBackground);
+  background-color: var(--primary);
 }
 
 footer img {
@@ -160,7 +160,7 @@ footer img {
 }
 
 .socialLinks a:hover i {
-  color: var(--primary);
+  color: var(--darkOrange);
 }
 hr {
   border: 1px solid var(--primary);
