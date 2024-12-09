@@ -69,4 +69,13 @@
     width: 100%;
     gap: 20px;
   }
+
+  .row.g-2.image-grid{
+    padding: 0 16px!important;
+  }
+
+  .resizeLogo{
+    height: auto;
+    width: 100vw;
+  }
 }
