@@ -1,13 +1,72 @@
-@media screen and (max-width: 992px) {
-    h1 {
-        text-align: center;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Geist+Mono:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+/* Variáveis das cores */
+:root {
+  --background: #ffffff;
+  --lightOrange: #f99948;
+  --darkOrange: #f7801a;
+  --cardBackground: #fff7e9;
+  --greenText: #485441;
+  --primary: #4b882a;
 }
 
+@media screen and (max-width: 748px) {
+  .navbar-nav-right {
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
 
+  #menuHamburguer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 71px;
+    padding: 0 16px;
+    align-items: center;
+  }
+  .container-fluid {
+    padding: 0;
+  }
 
-@media screen and (min-width: 1440px) {
-    .main-menu {
-        gap: 6rem;
-    }
+  #navbarNav {
+    background-color: white;
+  }
+
+  .navbar-toggler {
+    height: 50px;
+    border: var(--primary) 2px solid;
+  }
+
+  .navbar-toggler:focus {
+    outline: 0;
+    box-shadow: 0 0 0 1px var(--secondary) !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(34%) saturate(353%)
+      hue-rotate(56deg) brightness(95%) contrast(86%);
+  }
+  #footerContainer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 2rem 1rem;
+    align-items: flex-start;
+  }
+  footer img {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+  }
+  #footerLogo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .socialLinks {
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+  }
 }

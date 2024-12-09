@@ -57,11 +57,11 @@ header {
 /* Propriedades da Navbar */
 
 .navbar {
-  background-color: #fafafa!important;
+  background-color: #fafafa !important;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between !important;
+  align-items: center !important;
   height: 80px;
 }
 
@@ -99,7 +99,7 @@ header {
 }
 
 .navbar-nav-right {
-  flex: 1;
+  flex: 0 1 232px;
   display: flex;
   justify-content: flex-end;
 }
